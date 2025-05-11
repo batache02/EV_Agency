@@ -32,26 +32,28 @@
 
 هيكل المشروع
 -------------
+
 research-management-app/
-├── backend/                 # خادم Node.js/Express
-│   ├── config/              # ملفات الإعدادات
-│   ├── controllers/         # وحدات التحكم بالطلبات
-│   ├── middleware/          # الوسائط البرمجية
-│   ├── models/              # نماذج قاعدة البيانات
-│   ├── routes/              # مسارات API
-│   └── server.js            # نقطة الدخول للخادم
 │
-├── frontend/                # تطبيق React Native/Expo
-    ├── assets/              # الصور والموارد
-    ├── components/          # مكونات قابلة لإعادة الاستخدام
-    ├── constants/           # الثوابت والإعدادات
-    ├── hooks/               # خطافات React المخصصة
-    ├── src/                 # المصدر الرئيسي للتطبيق
-    │   ├── api/             # وظائف التعامل مع API
-    │   ├── context/         # سياقات React
-    │   ├── navigation/      # إعدادات التنقل
-    │   └── screens/         # شاشات التطبيق
-    └── App.js               # نقطة الدخول للتطبيق
+├── backend/                       # خادم Node.js/Express
+│   ├── config/                    # ملفات الإعدادات
+│   ├── controllers/               # وحدات التحكم بالطلبات
+│   ├── middleware/                # الوسائط البرمجية
+│   ├── models/                    # نماذج قاعدة البيانات
+│   ├── routes/                    # مسارات API
+│   └── server.js                  # نقطة الدخول للخادم
+│
+└── frontend/                      # تطبيق React Native/Expo
+    ├── assets/                    # الصور والموارد
+    ├── components/                # مكونات قابلة لإعادة الاستخدام
+    ├── constants/                 # الثوابت والإعدادات
+    ├── hooks/                     # خطافات React المخصصة
+    ├── src/                       # المصدر الرئيسي للتطبيق
+    │   ├── api/                   # وظائف التعامل مع API
+    │   ├── context/               # سياقات React
+    │   ├── navigation/            # إعدادات التنقل
+    │   └── screens/               # شاشات التطبيق
+    └── App.js                     # نقطة الدخول للتطبيق
 
 متطلبات التشغيل
 ----------------
@@ -70,6 +72,7 @@ research-management-app/
    npm install
 
 3. أنشئ ملف .env داخل مجلد backend وأضف المتغيرات التالية:
+
    PORT=5000
    MONGODB_URI=mongodb://localhost:27017/research-management
    JWT_SECRET=your_jwt_secret_key
@@ -126,7 +129,6 @@ research-management-app/
 
 الترخيص
 --------
-هذا المشروع مرخص تحت رخصة MIT - انظر ملف LICENSE للتفاصيل.
 
 الاتصال
 --------
